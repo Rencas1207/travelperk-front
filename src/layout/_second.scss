@@ -1,0 +1,85 @@
+.second {
+  .icon-shopping-car {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    @include desktop {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0rem;
+    }
+  }
+
+  .icon-search {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .btn {
+    display: flex;
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.search {
+  position: relative;
+  display: block;
+
+  @include desktop {
+    display: none;
+  }
+
+  &:hover input {
+    width: 12rem;
+  }
+
+  input {
+    height: 2.2rem;
+    width: 0rem;
+    padding: 0 1rem;
+    margin-right: 0.5rem;
+    color: $black;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+
+    &::placeholder {
+      color: $black;
+      font-size: 0.8rem;
+    }
+
+    &:focus {
+      width: 12rem;
+    }
+  }
+
+  .button-search {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    background: $background2;
+    margin: auto;
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 0.2rem;
+
+    .icon-search {
+      width: 1.3rem;
+      height: 1.3rem;
+      margin: auto;
+      transition: all 0.5s ease;
+      // opacity: 0;
+    }
+  }
+}

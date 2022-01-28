@@ -1,0 +1,40 @@
+.btn {
+  padding: 0.5rem 1rem;
+  background: $white;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &.return {
+    background: $background1;
+    color: $white;
+    margin-top: 1rem;
+
+    &:hover {
+      background: $background2;
+    }
+  }
+
+  &:hover {
+    background: $background2;
+    color: $white;
+  }
+
+  .icon-user {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.user-dashboard {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+}

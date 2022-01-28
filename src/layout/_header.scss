@@ -1,0 +1,19 @@
+.header {
+  height: 4rem;
+  background: $background1;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+.header__contenido {
+  width: 100%;
+  justify-content: space-between;
+
+  @include desktop {
+    padding: 0.5rem 0.7rem;
+    position: relative;
+  }
+}

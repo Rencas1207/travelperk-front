@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="theme-color" content="#a815e2" />
+   <link rel="icon" href="./img/icon-travel.svg" />
+   <link rel="apple-touch-icon" href="./img/icon-travel.svg">
+   <meta name="description" content="Header Ecommerce">
+
+   <meta name="twitter:card" content="summary">
+   <meta property="og:type" content="website">
+   <meta property="og:title" name="twitter:title" content="Header Ecommerce">
+   <meta property="og:description" name="twitter:description" content="Header Ecommerce para una agencia de viajes">
+
+   <link rel="stylesheet" href="css/app.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+   <title>TravelPer - Header Ecommerce</title>
+</head>
+
+<body>
+   <header class="header flex">
+      <div class="wrapper header__contenido flex align-items ">
+         <div class="first flex align-items">
+            <div class="logo flex align-items">
+               <img loading="lazy" class="icon-travel" src="img/icon-travel.svg" alt="icon logo travel">
+               <h1>travelper</h1>
+            </div>
+
+            <div class="menu-bar">
+               <img loading="lazy" class="icon-bar" src="img/icon-bar-menu.svg" alt="icon bar menu">
+            </div>
+
+            <nav class="navegacion flex align-items" style="left: -100%;">
+               <ul class="flex justify-content align-items">
+                  <li class="submenu flex justify-content align-items">
+                     <a href="#" class="flex align-items">
+                        Vuelos
+                        <img loading="lazy" class="icon-down" src="img/icon-down.svg" alt="icon down">
+                     </a>
+                     <ul class="children">
+                        <li>Vuelo 1</li>
+                        <li>Vuelo 2</li>
+                        <li>Vuelo 3</li>
+                        <li>Vuelo 4</li>
+                        <li>Vuelo 5</li>
+                     </ul>
+                  </li>
+                  <li class="submenu flex justify-content align-items">
+                     <a href="#" class="flex align-items">
+                        Paquetes
+                        <img loading="lazy" class="icon-down" src="img/icon-down.svg" alt="icon down">
+                     </a>
+                     <ul class="children">
+                        <li>Paquete 1</li>
+                        <li>Paquete 2</li>
+                        <li>Paquete 3</li>
+                     </ul>
+                  </li>
+                  <li class="submenu flex justify-content align-items">
+                     <a href="#" class="flex align-items">
+                        Alojamiento
+                        <img loading="lazy" class="icon-down" src="img/icon-down.svg" alt="icon down">
+                     </a>
+                     <ul class="children">
+                        <li>Alojamiento 1</li>
+                        <li>Alojamiento 2</li>
+                        <li>Alojamiento 3</li>
+                        <li>Alojamiento 4</li>
+                     </ul>
+                  </li>
+                  <li class="submenu flex justify-content align-items">
+                     <a href="#" class="flex align-items">
+                        Actividades
+                        <img loading="lazy" class="icon-down" src="img/icon-down.svg" alt="icon down">
+                     </a>
+                     <ul class="children">
+                        <li>Actividad 1</li>
+                        <li>Actividad 2</li>
+                        <li>Actividad 3</li>
+                        <li>Actividad 4</li>
+                        <li>Actividad 5</li>
+                     </ul>
+                  </li>
+                  <li class="submenu flex justify-content align-items">
+                     <a href="#" class="flex align-items">
+                        Traslados
+                        <img loading="lazy" class="icon-down" src="img/icon-down.svg" alt="icon down">
+                     </a>
+                     <ul class="children">
+                        <li>Traslado 1</li>
+                        <li>Traslado 2</li>
+                        <li>Traslado 3</li>
+                     </ul>
+                  </li>
+
+               </ul>
+               <button class="btn flex align-items">
+                  <img loading="lazy" class="icon-user" src="img/icon-user.svg" alt="icon user">
+                  Mi cuenta
+               </button>
+            </nav>
+         </div>
+
+         <div class="second flex align-items">
+            <div class="search">
+               <input type="text" placeholder="Buscar...">
+               <div class="button-search flex justify-content align-items">
+                  <img loading="lazy" class="icon-search" src="img/icon-search.svg" alt="icon search">
+               </div>
+            </div>
+
+            <a href="#shopping-car" rel="modal:open" class="shopping-car">
+               <img loading="lazy" class="icon-shopping-car" src="img/icon-shopping-car.svg" alt="icon shopping car">
+            </a>
+
+            <button class="btn flex align-items">
+               <img loading="lazy" class="icon-user" src="img/icon-user.svg" alt="icon user">
+               Mi cuenta
+            </button>
+         </div>
+      </div>
+
+      <div class="search-input">
+         <input type="text" placeholder="Buscar...">
+         <label>
+            <img loading="lazy" class="icon-search" src="img/icon-search-dark.svg" alt="icon search">
+         </label>
+      </div>
+   </header>
+
+   <div id="shopping-car" class="modal">
+      <p>Mi carrito de compras </p>
+   </div>
+
+   <script src="js/app.js"></script>
+
+</body>
+
+</html>

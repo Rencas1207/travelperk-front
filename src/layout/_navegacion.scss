@@ -1,0 +1,106 @@
+.navegacion {
+  margin-left: 1.5rem;
+
+  @include desktop {
+    position: absolute;
+    top: 7.21rem;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $background1;
+  }
+
+  .btn {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      margin: 0.5rem 0.4rem 0.2rem;
+    }
+  }
+
+  ul {
+    flex-direction: row;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    li {
+      cursor: pointer;
+    }
+
+    .submenu {
+      position: relative;
+      flex-direction: row;
+      color: $white;
+      margin-right: 1rem;
+      padding: 1.5rem 0;
+      font-size: 0.8rem;
+
+      @include desktop {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        background: $background1;
+      }
+
+      &:hover {
+        .children {
+          display: block;
+          position: absolute;
+          top: 4.05rem;
+          left: 0;
+          width: 10rem;
+          @include desktop {
+            width: 100%;
+          }
+
+          @include desktop {
+            display: none;
+            position: static;
+          }
+        }
+
+        .icon-down {
+          transform: rotate(-180deg);
+        }
+      }
+
+      .children {
+        display: none;
+        background: $background2;
+        li {
+          padding: 1rem 1.4rem;
+          transition: all 0.5s ease;
+
+          &:hover {
+            padding-left: 2.4rem;
+          }
+        }
+      }
+
+      a {
+        justify-content: space-between;
+
+        @include desktop {
+          width: 100%;
+          padding: 0.8rem 0.9rem;
+        }
+      }
+    }
+  }
+
+  .icon-down {
+    margin-left: 0.35rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    transition: all 0.4s ease;
+  }
+}
